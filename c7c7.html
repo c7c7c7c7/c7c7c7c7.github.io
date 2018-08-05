@@ -29,13 +29,13 @@
         stage.update();
       });
       function emitParticles() {
-        for (var i = 0; i < 5; i++) {
+        for (var i = 0; i < 1; i++) {
           var particle = new createjs.Bitmap("c7c7.png");
           stage.addChild(particle);
           particle.x = stage.mouseX;
           particle.y = stage.mouseY;
-          particle.vx = 10 * (Math.random() - 0.5);
-          particle.vy = 10 * (Math.random() - 0.5);
+          particle.vx = 40 * (Math.random() -0.5);
+          particle.vy = 40 * (Math.random() -0.5);
           particle.life = 150;
           particles.push(particle);
         }
